@@ -1,0 +1,27 @@
+
+html,body{
+    margin: 0;
+    font-family: ;
+    font-size: 16px;
+}
+
+figure,p,h1,h1,h3{margin: 0;}
+/* figure,p,h1,h1,h3{margin: 0;} 얘네 공통사항 바깥여백이 있어 없애주기 */
+
+img{vertical-align: middle;}
+/* img{vertical-align: middle;} 이미지가 항상 살짝 떠서 방지해줌 */
+
+/* 여기까지가 기본셋팅!!! */
+
+ul,li{
+    margin: 0; padding: 0;
+    list-style: none;
+}
+
+table{ border-collapse: collapse;}
+
+*{
+    box-sizing: border-box;
+}
+
+a{color:#333; text-decoration: none;}

@@ -1,0 +1,76 @@
+@import url(./reset.css);
+/* index.css */
+
+:root{
+    --pade-width : 1536px;
+}
+/* :root{
+    --pade-width : 1536px;
+} 효율성을 위해 사용 이너값을 정해주는 것! */
+
+header{
+    width: var(--pade-width); margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+header > h1{
+    font-family:serif
+}
+header > h1 > a{}
+
+header > nav{}
+header > nav > a{
+    padding: 0 20px;
+}
+
+header > div{}
+header > div > a{}
+
+
+main{ width: var(--pade-width); margin: 0 auto;}
+
+.spot{
+    position: relative;
+}
+.spot > img {width: 100%;}
+.spot > figcaption{
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #58412A;
+}
+.spot > figcaption > b{
+    text-align: center;
+    font-size: 3rem;
+    /* font-size: 4rem; 이란, html리 갖고있는
+    최상위 폰트사이즈 *n이 되는것 */
+    line-height: 1.5;
+    font-family: serif;
+    animation: txt 2s forwards;
+}
+.spot > figcaption > p{
+    margin-top: 20px;
+    font-family: sans-serif ;
+    animation: txt 1s 0.5s forwards;
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+@keyframes txt{
+    0%{
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
